@@ -1,19 +1,19 @@
 function createRecord(name, population, tresury){
     return{
         name,
-        tresury,
         population,
+        tresury,
         taxRate: 10,
         collectTaxes(){
-            this.tresury += this.population * this.taxRcate;
+            return console.log(this.tresury += this.population * this.taxRate);
         },
         applyGrowth(percent){
-            this.population += Math.floor(this.population * percent / 100);
+            return this.population += Math.floor(this.population * percent / 100);
         },
         applyRecession(percent){
-            this.tresury -= Math.floor(this.tresury * percent /100);
+            return this.tresury -= Math.floor(this.tresury * percent /100);
         },
     };
 }
 
-console.log(createRecord(1,2,3).applyGrowth(3));
+console.log(createRecord('Bulgaria',22,33).collectTaxes());
