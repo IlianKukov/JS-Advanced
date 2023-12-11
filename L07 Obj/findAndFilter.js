@@ -10,4 +10,6 @@ let foundFilter = arr1.filter( function(element){
     return element>10;
 });
 
-console.log(foundFilter.join(" - "));
+let rev = foundFilter.reverse();
+
+console.log(rev.join(" - "));
