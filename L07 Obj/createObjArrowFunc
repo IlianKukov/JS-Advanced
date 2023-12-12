@@ -1,0 +1,7 @@
+const createObject = (firstName, lastName, age) => ({
+    firstName,
+    lastName,
+    age,
+});
+
+console.log(createObject("TestName", "TestFamilyName", "20"));
