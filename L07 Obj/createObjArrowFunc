@@ -5,3 +5,16 @@ const createObject = (firstName, lastName, age) => ({
 });
 
 console.log(createObject("TestName", "TestFamilyName", "20"));
+
+const person = {
+    name: "Test",
+    sayHello: function () {
+        console.log("Hello");
+    },
+}
+
+person.sayHello();
+
+console.log(Object.keys(person));
+console.log(Object.values(person));
+console.log(Object.entries(person));
